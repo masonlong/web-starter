@@ -42,6 +42,7 @@ $ gulp watch
 
 ```sh
 $ gulp
+```
 
 ## Inspiration
 
