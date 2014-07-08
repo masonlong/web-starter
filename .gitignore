@@ -1,0 +1,15 @@
+# ignore generated files
+app/logs/
+app/cache/
+
+# node
+node_modules/
+npm-debug.log
+
+# editor temp files / filesystem clutter
+.DS_Store
+*.DS_Store
+*/.DS_Store
+*~
+\#*\#
+.sass-cache
