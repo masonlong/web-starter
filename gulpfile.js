@@ -1,26 +1,23 @@
 /* global require*/
 'use strict';
 
-var gulp     = require('gulp'),
-    args     = require('yargs').argv,
-    gutil    = require('gulp-util'),
-    jshint   = require('gulp-jshint'),
-    sass     = require('gulp-sass'),
-    uglify   = require('gulp-uglify'),
-    gulpif   = require('gulp-if'),
-    concat   = require('gulp-concat'),
-    rename   = require('gulp-rename'),
-    prefix   = require('gulp-autoprefixer'),
-    imagemin = require('gulp-imagemin'),
-    changed  = require('gulp-changed'),
-    cache    = require('gulp-cache'),
-    size     = require('gulp-size'),
-    filter   = require('gulp-cache'),
-    flatten  = require('gulp-size'),
-    bowerFiles = require('gulp-bower-files'),
-    neat     = require('node-neat').includePaths,
-    runSequence = require('run-sequence'),
-    wiredep = require('wiredep').stream;
+var gulp        = require('gulp'),
+    args        = require('yargs').argv,
+    gutil       = require('gulp-util'),
+    jshint      = require('gulp-jshint'),
+    sass        = require('gulp-sass'),
+    uglify      = require('gulp-uglify'),
+    gulpif      = require('gulp-if'),
+    concat      = require('gulp-concat'),
+    rename      = require('gulp-rename'),
+    prefix      = require('gulp-autoprefixer'),
+    imagemin    = require('gulp-imagemin'),
+    changed     = require('gulp-changed'),
+    cache       = require('gulp-cache'),
+    size        = require('gulp-size'),
+    bowerFiles  = require('gulp-bower-files'),
+    neat        = require('node-neat').includePaths,
+    runSequence = require('run-sequence');
 
 var paths = {
     scss: './assets/sass/*.scss',
@@ -45,9 +42,9 @@ gutil.log('Environment', gutil.colors.blue(isProduction ? 'Production' : 'Develo
 
 // Copy Web Fonts To Dist
 gulp.task('fonts', function () {
-  return gulp.src(paths.fonts)
-    .pipe(gulp.dest('app/fonts'))
-    .pipe(size({title: 'fonts'}));
+    return gulp.src(paths.fonts)
+        .pipe(gulp.dest('app/fonts'))
+        .pipe(size({title: 'fonts'}));
 });
 
 // Optimize Images
