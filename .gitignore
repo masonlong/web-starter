@@ -6,6 +6,9 @@ app/cache/
 node_modules/
 npm-debug.log
 
+#bower
+bower_components/
+
 # editor temp files / filesystem clutter
 .DS_Store
 *.DS_Store

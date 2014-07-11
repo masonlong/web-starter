@@ -1,0 +1,10 @@
+{
+  "name": "web-starter",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0"
+  },
+  "devDependencies": {
+    "jquery": "~1.11.0"
+  }
+}
